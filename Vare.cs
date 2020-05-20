@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Notifications;
-using Windows.UI.Xaml.Controls;
 using System.Drawing;
 
 namespace Swipefit
@@ -12,7 +11,7 @@ namespace Swipefit
     public class Vare
     {
         //instance fields
-        private System.Drawing.Image billede;
+        private Image billede;
         private double pris;
         private string størrelse;
         private string farve;
@@ -20,7 +19,7 @@ namespace Swipefit
         private string beskrivelse;
         
         // properties
-        public System.Drawing.Image Billede
+        public Image Billede
         {
             get { return billede; }
             set { billede = value; }
@@ -51,7 +50,7 @@ namespace Swipefit
           set { beskrivelse = value; }
         }
         //constructor
-        public Vare(System.Drawing.Image Billede, double Pris, string Størrelse, string Farve, string Navn, string Beskrivelse)
+        public Vare(Image Billede, double Pris, string Størrelse, string Farve, string Navn, string Beskrivelse)
         {
             this.billede = Billede;
             this.pris = Pris;

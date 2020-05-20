@@ -45,3 +45,8 @@ C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\obj\x86\Debug\MultipleQualifiersP
 C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885274160000000.json
 C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\obj\x86\Debug\Swipefit.csprojAssemblyReference.cache
+C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\obj\x86\Debug\BlankPage1.g.i.cs
+C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\obj\x86\Debug\BlankPage1.g.cs
+C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\obj\x86\Debug\BlankPage1.xaml
+C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\obj\x86\Debug\BlankPage1.xbf
+C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\bin\x86\Debug\BlankPage1.xbf

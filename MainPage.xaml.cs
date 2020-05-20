@@ -28,5 +28,6 @@ namespace Swipefit
             this.InitializeComponent();
             this.ViewModel = new ViewModel();
         }
+
     }
 }
