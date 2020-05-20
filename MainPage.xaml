@@ -9,8 +9,22 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-  
+        <ListView
+            SelectedItem="{x:Bind ViewModel.Billede}"
+            ItemsSource="{x:Bind ViewModel.VarerListe}">
+            <ListView.ItemTemplate>
 
+                <DataTemplate x:DataType="local:Vare">
 
+                    <StackPanel Orientation="Horizontal">
+                        <!--<Image Source="{x:Bind Billede}"/>-->
+                    </StackPanel>
+
+                </DataTemplate>
+
+            </ListView.ItemTemplate>
+                        
+        </ListView>
+                  
     </Grid>
 </Page>
