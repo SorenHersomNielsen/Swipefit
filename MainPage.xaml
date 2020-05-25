@@ -25,7 +25,7 @@
             </ListView.ItemTemplate>
                         
         </ListView>
-        <Image Source="/Assets/StoreLogo.png" Height="100" />
+        <Image Source="{x:Bind ViewModel.Billedesti}" Height="100" />
 
 
     </Grid>

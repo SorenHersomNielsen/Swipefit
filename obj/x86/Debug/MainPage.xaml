@@ -25,7 +25,7 @@
             </ListView.ItemTemplate>
                         
         </ListView>
-        <Image Source="/Assets/StoreLogo.png" Height="100" />
+        <Image x:ConnectionId='3'                                        Height="100" />
 
 
     </Grid>
