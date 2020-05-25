@@ -25,7 +25,7 @@
             </ListView.ItemTemplate>
                         
         </ListView>
-        <Image Margin="410,216,611,394" Source="{Binding Path=ViewModel.Billede}"/>
+        <Image Source="/Assets/StoreLogo.png" Height="100" />
 
 
     </Grid>

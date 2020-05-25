@@ -22,9 +22,11 @@ namespace Swipefit
     /// </summary>
     public sealed partial class BlankPage1 : Page
     {
+        public ViewModel ViewModel { get; set; }
         public BlankPage1()
         {
             this.InitializeComponent();
+            this.ViewModel = new ViewModel();
         }
     }
 }
