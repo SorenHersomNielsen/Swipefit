@@ -59,12 +59,6 @@ namespace Swipefit
             set;
         }
 
-            public string Billedesti1
-        {
-            get;
-            set;
-        }
-
         public RelayCommand TilføjTøjCommand { get; set; }
         public RelayCommand FjernBestemtTøjCommand { get; set; }
 
@@ -101,13 +95,6 @@ namespace Swipefit
         {
             VarerListe.Remove(Billede);
         }
-
-
-
-
-
-
-
 
     }    
 }
