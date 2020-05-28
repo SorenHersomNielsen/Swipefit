@@ -31,11 +31,17 @@
     <AppxPackagedFile Include="C:\Users\herso\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\herso\.nuget\packages\system.drawing.common\4.7.0\lib\netstandard2.0\System.Drawing.Common.dll">
-      <PackagePath>System.Drawing.Common.dll</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\Assets\nakd_ribbed_racerback_dress_1100-003105-0005_02k_r.jpg">
+      <PackagePath>Assets\nakd_ribbed_racerback_dress_1100-003105-0005_02k_r.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\Assets\nakd_smocked_flounce_top_1014-000939-0529_01a.jpg">
+      <PackagePath>Assets\nakd_smocked_flounce_top_1014-000939-0529_01a.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\Assets\navyblazer.jpg">
+      <PackagePath>Assets\navyblazer.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>

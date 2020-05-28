@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "l+YApAswcF3BGL4mdHEOSu1KbvjGENwuAUvlFdmXRXQ0qWyN8is3MshyVFGQlW6tsbD0El98bO9+o/R6KVS6zA==",
+  "dgSpecHash": "MY2ztKj6GYNjrlbxqXIjunG+4NN8loNjSJOkaAluicUbA6bigLU4LAdyLsEF9i51ZBAWS9B/Qa+c8xkHnH9t1Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\herso\\OneDrive\\Code\\Swipefit\\Swipefit\\Swipefit.csproj",
   "expectedPackageFiles": [
@@ -26,8 +26,7 @@
     "C:\\Users\\herso\\.nuget\\packages\\runtime.win10-x86.microsoft.net.native.compiler\\2.2.8-rel-28605-00\\runtime.win10-x86.microsoft.net.native.compiler.2.2.8-rel-28605-00.nupkg.sha512",
     "C:\\Users\\herso\\.nuget\\packages\\runtime.win10-x86.microsoft.net.native.sharedlibrary\\2.2.7-rel-28605-00\\runtime.win10-x86.microsoft.net.native.sharedlibrary.2.2.7-rel-28605-00.nupkg.sha512",
     "C:\\Users\\herso\\.nuget\\packages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.2.10\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.10.nupkg.sha512",
-    "C:\\Users\\herso\\.nuget\\packages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.10\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512",
-    "C:\\Users\\herso\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
+    "C:\\Users\\herso\\.nuget\\packages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.10\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512"
   ],
   "logs": []
 }

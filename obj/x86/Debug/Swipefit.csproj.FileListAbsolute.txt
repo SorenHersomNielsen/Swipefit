@@ -19,14 +19,12 @@ C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\bin\x86\Debug\Core\AppxManifest.x
 C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\bin\x86\Debug\Core\Swipefit.exe
 C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\bin\x86\Debug\Swipefit.build.appxrecipe
 C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\bin\x86\Debug\System.Runtime.dll
-C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\bin\x86\Debug\System.Drawing.Common.dll
 C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
 C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\obj\x86\Debug\Swipefit.csproj.CoreCompileInputs.cache
 C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\obj\x86\Debug\Swipefit.csproj.CopyComplete
 C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\obj\x86\Debug\Swipefit.exe
 C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\obj\x86\Debug\Swipefit.pdb
 C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\obj\x86\Debug\ResourceHandlingTask.state
-C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\obj\x86\Debug\FxResources.System.Drawing.Common.SR.resw
 C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\obj\x86\Debug\priconfig.xml
 C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\obj\x86\Debug\priconfig.xml.intermediate
 C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\obj\x86\Debug\unfiltered.layout.resfiles

@@ -26,6 +26,7 @@
                         
         </ListView>
         <Image Source="{x:Bind ViewModel.Billedesti}" Height="100" />
+        <Button Content="Button" Margin="385,817,0,0" VerticalAlignment="Top"/>
 
 
     </Grid>

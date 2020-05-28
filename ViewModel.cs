@@ -12,7 +12,7 @@ namespace Swipefit
     public class ViewModel
     {
         //instance fields
-        private string billede; 
+        private string billede;
         private double pris;
         private string størrelse;
         private string farve;
@@ -26,7 +26,7 @@ namespace Swipefit
         = new ObservableCollection<Vare>();
 
         // properties
-        public string Image 
+        public string Billede
         { get => billede;
             set => billede = value;
         }
@@ -58,23 +58,26 @@ namespace Swipefit
             get;
             set;
         }
+        
+        public Vare SelectedItem { get; set; }
+
+        public Vare NæsteVare { get; set; }
 
         public RelayCommand TilføjTøjCommand { get; set; }
         public RelayCommand FjernBestemtTøjCommand { get; set; }
-
-        public Vare Billede { get; set; }
        
         //constructor
         public ViewModel()
         {
             VarerListe = new ObservableCollection<Vare>();
             //Testdata
-            Billedesti = "/Assets/StoreLogo.png";
+            Billedesti = "/Assets/navyblazer.jpg";
             VarerListe.Add(new Vare(Billedesti, 179, "XL", "Marineblå ", "Jack & Jones Intelligence - Marineblå chinoshorts med løbesnor", "Blødt stræk-twill Jack & Jones samarbejder med Better Cotton-initiativet for at forbedre bomuldslandbrug på globalt plan Dette gør det bedre for landmændene og for miljøet "));
-            Billedesti = "/Assets/LockScreenLogo.scale-200.png";
-            VarerListe.Add(new Vare(Billedesti, 250, "S", "Beige", "NAKD mini kjole", "elastisk og blød og har et ærmeløst design"));
+            //Billedesti = "/Assets/nakd_smocked_flounce_top_1014-000939-0529_01a.jpg";
+            //VarerListe.Add(new Vare(Billedesti, 250, "S", "Beige", "NAKD mini kjole", "elastisk og blød og har et ærmeløst design"));
+            //Billedesti = "/Assets/nakd_ribbed_racerback_dress_1100-003105-0005_02k_r.jpg";
+            //VarerListe.Add(new Vare(Billedesti, 150, "M", "rød", "boohoo top", "blomstermønstret top med v udsk¨ring"));
             
-            //VarerListe.Add(new Vare(Image3, 150, "M", "rød", "boohoo top", "blomstermønstret top med v udsk¨ring"));
             TilføjTøjCommand = new RelayCommand(TilføjTøj);
             FjernBestemtTøjCommand = new RelayCommand(FjernBestemtTøj);           
         }
@@ -84,7 +87,7 @@ namespace Swipefit
         /// </summary>
         public void TilføjTøj()
         {
-            Vare vare = new Vare(Image, Pris, Strørrelse, Farve, Navn, Beskrivelse);
+            Vare vare = new Vare(Billede, Pris, Strørrelse, Farve, Navn, Beskrivelse);
             VarerListe.Add(vare);
         }
 
@@ -93,8 +96,10 @@ namespace Swipefit
         /// </summary>
         public void FjernBestemtTøj()
         {
-            VarerListe.Remove(Billede);
+            VarerListe.Remove(SelectedItem);
         }
+
+
 
     }    
 }

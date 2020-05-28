@@ -30,25 +30,33 @@
     <AppXManifest Include="C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-05-25T11:32:30.740</Modified>
+      <Modified>2020-05-27T11:34:39.035</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\bin\x86\Debug\Swipefit.exe">
       <PackagePath>entrypoint\Swipefit.exe</PackagePath>
-      <Modified>2020-05-25T11:32:30.256</Modified>
+      <Modified>2020-05-27T11:34:38.086</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\herso\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2020-02-27T18:16:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\herso\.nuget\packages\system.drawing.common\4.7.0\lib\netstandard2.0\System.Drawing.Common.dll">
-      <PackagePath>System.Drawing.Common.dll</PackagePath>
-      <Modified>2018-09-18T17:38:14.000</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2019-03-18T17:36:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\Assets\nakd_ribbed_racerback_dress_1100-003105-0005_02k_r.jpg">
+      <PackagePath>Assets\nakd_ribbed_racerback_dress_1100-003105-0005_02k_r.jpg</PackagePath>
+      <Modified>2020-05-27T08:13:43.267</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\Assets\nakd_smocked_flounce_top_1014-000939-0529_01a.jpg">
+      <PackagePath>Assets\nakd_smocked_flounce_top_1014-000939-0529_01a.jpg</PackagePath>
+      <Modified>2020-05-27T08:13:51.704</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\Assets\navyblazer.jpg">
+      <PackagePath>Assets\navyblazer.jpg</PackagePath>
+      <Modified>2020-05-27T08:13:31.612</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -90,19 +98,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\bin\x86\Debug\Swipefit.xr.xml">
       <PackagePath>Swipefit.xr.xml</PackagePath>
-      <Modified>2020-05-25T11:23:34.112</Modified>
+      <Modified>2020-05-27T11:34:37.803</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-05-25T11:32:30.056</Modified>
+      <Modified>2020-05-27T11:34:37.831</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\bin\x86\Debug\BlankPage1.xbf">
       <PackagePath>BlankPage1.xbf</PackagePath>
-      <Modified>2020-05-25T11:32:30.057</Modified>
+      <Modified>2020-05-27T11:34:37.831</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-05-25T11:32:30.057</Modified>
+      <Modified>2020-05-27T11:34:37.831</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -110,11 +118,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-05-22T17:24:46.830</Modified>
+      <Modified>2020-05-27T09:56:13.358</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\herso\OneDrive\Code\Swipefit\Swipefit\bin\x86\Debug\Core\Swipefit.exe">
       <PackagePath>Swipefit.exe</PackagePath>
-      <Modified>2020-05-25T11:32:30.734</Modified>
+      <Modified>2020-05-27T11:34:39.015</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
