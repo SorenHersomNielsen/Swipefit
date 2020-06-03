@@ -27,6 +27,10 @@ namespace Swipefit
             this.InitializeComponent();
             this.ViewModel = new ViewModel();
         }
-
+       
+        private void ViseVirksomhedSiden(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(BlankPage1));
+        }
     }
 }

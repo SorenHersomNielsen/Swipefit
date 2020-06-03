@@ -4,22 +4,40 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Swipefit"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:muxc="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
         <TextBox HorizontalAlignment="Left" Height="70" Margin="124,735,0,0" Description="Pris" Text="{x:Bind ViewModel.Pris, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Width="84"/>
-        <TextBox HorizontalAlignment="Left" Height="70" Margin="227,735,0,0" Description="Størrelse"  TextWrapping="Wrap" VerticalAlignment="Top" Width="103"/>
+        <TextBox HorizontalAlignment="Left" Height="70" Margin="227,735,0,0" Description="Størrelse" Text="{x:Bind ViewModel.Strorrelse}"   TextWrapping="Wrap" VerticalAlignment="Top" Width="103"/>
         <TextBox HorizontalAlignment="Left" Height="70" Margin="344,735,0,0" Description="Farve" Text="{x:Bind ViewModel.Farve, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
         <TextBox HorizontalAlignment="Left" Height="70" Margin="493,735,0,0" Description= "Navn" Text="{x:Bind ViewModel.Navn, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Width="99"/>
         <TextBox HorizontalAlignment="Left" Height="70" Margin="598,735,0,0" Description="Beskrivelse" Text="{x:Bind ViewModel.Beskrivelse, Mode=TwoWay}" TextWrapping="Wrap" VerticalAlignment="Top" Width="121"/>
-        <Button  Content="Tilføj Tøj" Height="62" Margin="208,855,0,0" VerticalAlignment="Top" Width="150"/>
-        <Button  Content="Slet Tøj" Height="62" Margin="1058,855,0,0" VerticalAlignment="Top" Width="150"/>
+        <Button  Command="{x:Bind ViewModel.TilfojTojCommand}" Content="Tilføj Tøj" Height="62" Margin="208,855,0,0" VerticalAlignment="Top" Width="150"/>
+        <Button Command="{x:Bind ViewModel.FjernBestemtTojCommand}" Content="Slet Tøj" Height="62" Margin="1058,855,0,0" VerticalAlignment="Top" Width="150"/>
+        <AppBarButton Click="UploadFile" Content="{x:Bind ViewModel.Billede}" Style="{StaticResource AppBarButtonRevealStyle}" Icon="Add" Label="Add item" Margin="330,528,0,0" Height="57" Width="82" />
+        
+        <muxc:MenuBar HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <muxc:MenuBarItem Title="Kategorier">
+                <MenuFlyoutItem Text="Swipefit" Click="StartSide"/>
+                <MenuFlyoutItem Text="Hurryfit"/>
+            </muxc:MenuBarItem>
+
+            <muxc:MenuBarItem Title="Support">
+                <MenuFlyoutItem Text="Tilføj vare"/>
+                <MenuFlyoutItem Text="Om os"/>
+            </muxc:MenuBarItem>
+        </muxc:MenuBar>
+        
+        
         
         <ListView HorizontalAlignment="Left" Height="767" Margin="796,38,0,0" VerticalAlignment="Top" Width="673">
+            
 
         </ListView>
+
+
 
 
 

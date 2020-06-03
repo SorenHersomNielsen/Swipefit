@@ -4,11 +4,12 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Swipefit"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:muxc="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        
         <ListView x:ConnectionId='2'
                                                      
                                                        >
@@ -17,7 +18,7 @@
                 <DataTemplate                        >
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="{Binding Billede}"/>
+                        
                     </StackPanel>
 
                 </DataTemplate>
@@ -25,9 +26,25 @@
             </ListView.ItemTemplate>
                         
         </ListView>
-        <Image x:ConnectionId='3'                                     
-               Height="100" />
-        <Button Content="Button" Margin="385,817,0,0" VerticalAlignment="Top"/>
+        <Image x:ConnectionId='3'                                        Height="100" />
+        <Button x:ConnectionId='4'                                                   Content="Button"  Margin="385,817,0,0" VerticalAlignment="Top"/>
+
+
+        <muxc:MenuBar HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <muxc:MenuBarItem Title="Kategorier">
+                <MenuFlyoutItem Text="Swipefit"/>
+                <MenuFlyoutItem Text="Hurryfit"/>
+            </muxc:MenuBarItem>
+
+            <muxc:MenuBarItem Title="Support">
+                <MenuFlyoutItem x:ConnectionId='5' Text="Tilføj vare"                            />
+                <MenuFlyoutItem Text="Om os"/>
+            </muxc:MenuBarItem>
+
+        </muxc:MenuBar>
+
+
+
 
 
     </Grid>

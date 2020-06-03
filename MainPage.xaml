@@ -4,11 +4,12 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Swipefit"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:muxc="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        
         <ListView
             SelectedItem="{x:Bind ViewModel.Billede}"
             ItemsSource="{x:Bind ViewModel.VarerListe}">
@@ -17,7 +18,7 @@
                 <DataTemplate x:DataType="local:Vare">
 
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="{Binding Billede}"/>
+                        
                     </StackPanel>
 
                 </DataTemplate>
@@ -26,7 +27,26 @@
                         
         </ListView>
         <Image Source="{x:Bind ViewModel.Billedesti}" Height="100" />
-        <Button Content="Button" Margin="385,817,0,0" VerticalAlignment="Top"/>
+        
+        
+        <Button Command="{x:Bind ViewModel.VisNaesteVareCommand}" Content="Button"  Margin="385,817,0,0" VerticalAlignment="Top"/>
+
+
+        <muxc:MenuBar HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <muxc:MenuBarItem Title="Kategorier">
+                <MenuFlyoutItem Text="Swipefit"/>
+                <MenuFlyoutItem Text="Hurryfit"/>
+            </muxc:MenuBarItem>
+
+            <muxc:MenuBarItem Title="Support">
+                <MenuFlyoutItem Text="Tilføj vare" Click="ViseVirksomhedSiden"/>
+                <MenuFlyoutItem Text="Om os"/>
+            </muxc:MenuBarItem>
+
+        </muxc:MenuBar>
+
+
+
 
 
     </Grid>

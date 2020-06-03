@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 using System.Collections.ObjectModel;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Swipefit
 {
@@ -34,7 +35,7 @@ namespace Swipefit
         { get => pris;
             set => pris = value;
         }
-        public string Strørrelse 
+        public string Strorrelse 
         { get => størrelse;
             set => størrelse = value;
         }
@@ -63,9 +64,12 @@ namespace Swipefit
 
         public Vare NæsteVare { get; set; }
 
-        public RelayCommand TilføjTøjCommand { get; set; }
-        public RelayCommand FjernBestemtTøjCommand { get; set; }
-       
+        public RelayCommand TilfojTojCommand { get; set; }
+        public RelayCommand FjernBestemtTojCommand { get; set; }
+        public RelayCommand VisNaesteVareCommand { get; set; }
+
+        public int taeller { get; set; }
+        
         //constructor
         public ViewModel()
         {
@@ -73,33 +77,44 @@ namespace Swipefit
             //Testdata
             Billedesti = "/Assets/navyblazer.jpg";
             VarerListe.Add(new Vare(Billedesti, 179, "XL", "Marineblå ", "Jack & Jones Intelligence - Marineblå chinoshorts med løbesnor", "Blødt stræk-twill Jack & Jones samarbejder med Better Cotton-initiativet for at forbedre bomuldslandbrug på globalt plan Dette gør det bedre for landmændene og for miljøet "));
-            //Billedesti = "/Assets/nakd_smocked_flounce_top_1014-000939-0529_01a.jpg";
-            //VarerListe.Add(new Vare(Billedesti, 250, "S", "Beige", "NAKD mini kjole", "elastisk og blød og har et ærmeløst design"));
+            Billedesti = "/Assets/nakd_smocked_flounce_top_1014-000939-0529_01a.jpg";
+            VarerListe.Add(new Vare(Billedesti, 250, "S", "Beige", "NAKD mini kjole", "elastisk og blød og har et ærmeløst design"));
             //Billedesti = "/Assets/nakd_ribbed_racerback_dress_1100-003105-0005_02k_r.jpg";
             //VarerListe.Add(new Vare(Billedesti, 150, "M", "rød", "boohoo top", "blomstermønstret top med v udsk¨ring"));
             
-            TilføjTøjCommand = new RelayCommand(TilføjTøj);
-            FjernBestemtTøjCommand = new RelayCommand(FjernBestemtTøj);           
+            TilfojTojCommand = new RelayCommand(TilfojToj);
+            FjernBestemtTojCommand = new RelayCommand(FjernBestemtToj);
+            taeller = 0;
+            VisNaesteVareCommand = new RelayCommand(visvare);
         }
 
         /// <summary>
         /// metoden giver brugen lov, til at tilføj ny nyt tøj til programmet
         /// </summary>
-        public void TilføjTøj()
+        public void TilfojToj()
         {
-            Vare vare = new Vare(Billede, Pris, Strørrelse, Farve, Navn, Beskrivelse);
+            Vare vare = new Vare(Billede, Pris, Strorrelse, Farve, Navn, Beskrivelse);
             VarerListe.Add(vare);
+            Billedesti = Billede;
         }
 
         /// <summary>
         /// metoden giver brugen lov, til at fjern bestemt tøj fra programmet
         /// </summary>
-        public void FjernBestemtTøj()
+        public void FjernBestemtToj()
         {
             VarerListe.Remove(SelectedItem);
         }
-
-
-
+       
+        public void visvare()
+        {
+            
+           
+            if (VarerListe.Count() < 10)
+            {
+                taeller = taeller + 1;
+                Billedesti = VarerListe[taeller].Billede;
+            }
+        }
     }    
 }

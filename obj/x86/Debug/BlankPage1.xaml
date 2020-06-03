@@ -4,22 +4,40 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Swipefit"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:muxc="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
         <TextBox x:ConnectionId='2' HorizontalAlignment="Left" Height="70" Margin="124,735,0,0" Description="Pris"                                             TextWrapping="Wrap" VerticalAlignment="Top" Width="84"/>
-        <TextBox HorizontalAlignment="Left" Height="70" Margin="227,735,0,0" Description="Størrelse"  TextWrapping="Wrap" VerticalAlignment="Top" Width="103"/>
-        <TextBox x:ConnectionId='3' HorizontalAlignment="Left" Height="70" Margin="344,735,0,0" Description="Farve"                                              TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
-        <TextBox x:ConnectionId='4' HorizontalAlignment="Left" Height="70" Margin="493,735,0,0" Description= "Navn"                                             TextWrapping="Wrap" VerticalAlignment="Top" Width="99"/>
-        <TextBox x:ConnectionId='5' HorizontalAlignment="Left" Height="70" Margin="598,735,0,0" Description="Beskrivelse"                                                    TextWrapping="Wrap" VerticalAlignment="Top" Width="121"/>
-        <Button  Content="Tilføj Tøj" Height="62" Margin="208,855,0,0" VerticalAlignment="Top" Width="150"/>
-        <Button  Content="Slet Tøj" Height="62" Margin="1058,855,0,0" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:ConnectionId='3' HorizontalAlignment="Left" Height="70" Margin="227,735,0,0" Description="Størrelse"                                        TextWrapping="Wrap" VerticalAlignment="Top" Width="103"/>
+        <TextBox x:ConnectionId='4' HorizontalAlignment="Left" Height="70" Margin="344,735,0,0" Description="Farve"                                              TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+        <TextBox x:ConnectionId='5' HorizontalAlignment="Left" Height="70" Margin="493,735,0,0" Description= "Navn"                                             TextWrapping="Wrap" VerticalAlignment="Top" Width="99"/>
+        <TextBox x:ConnectionId='6' HorizontalAlignment="Left" Height="70" Margin="598,735,0,0" Description="Beskrivelse"                                                    TextWrapping="Wrap" VerticalAlignment="Top" Width="121"/>
+        <Button x:ConnectionId='7'                                                Content="Tilføj Tøj" Height="62" Margin="208,855,0,0" VerticalAlignment="Top" Width="150"/>
+        <Button x:ConnectionId='8'                                                     Content="Slet Tøj" Height="62" Margin="1058,855,0,0" VerticalAlignment="Top" Width="150"/>
+        <AppBarButton x:ConnectionId='9'                                                         Style="{StaticResource AppBarButtonRevealStyle}" Icon="Add" Label="Add item" Margin="330,528,0,0" Height="57" Width="82" />
+        
+        <muxc:MenuBar HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <muxc:MenuBarItem Title="Kategorier">
+                <MenuFlyoutItem x:ConnectionId='10' Text="Swipefit"                  />
+                <MenuFlyoutItem Text="Hurryfit"/>
+            </muxc:MenuBarItem>
+
+            <muxc:MenuBarItem Title="Support">
+                <MenuFlyoutItem Text="Tilføj vare"/>
+                <MenuFlyoutItem Text="Om os"/>
+            </muxc:MenuBarItem>
+        </muxc:MenuBar>
+        
+        
         
         <ListView HorizontalAlignment="Left" Height="767" Margin="796,38,0,0" VerticalAlignment="Top" Width="673">
+            
 
         </ListView>
+
+
 
 
 
